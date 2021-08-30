@@ -1,0 +1,770 @@
+/*Обнуление*/
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+/*--------------------*/
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy'), local('Gilroy'),
+        url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+        url('../fonts/Gilroy-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing:border-box;
+}
+.body{
+    font-family: 'Gilroy';
+    font-size: 14px;
+
+}
+.wrapper {
+    background: #E5E5E5;
+}
+.content {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.header{
+    position: relative;
+}
+.header1 {
+    
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 28px 0 28px 28px;
+    height: 700px;
+    background: linear-gradient(180deg, #00549A 0%, #20A0C9 81.85%);
+}
+.header__menu  {
+    display: flex;
+    height: 150px;
+    justify-content: space-around;
+    align-items:flex-start;
+    flex: 1 1 auto;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Gilroy';
+    color: #fff;
+    
+}
+
+.header__nav li {
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+.header__nav__item:hover {
+    color: #FFCC00;
+    cursor: pointer;
+}
+
+
+.header__camon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.logo1 {
+margin-right: -2px;
+}
+
+.logo2 {
+
+}
+
+.header__row2 {
+    padding-top: 5px;
+    text-align: left;
+}
+
+.header__contacts {
+    
+   text-align: right;
+    margin-right: 15px;
+    font-family: 'Gilroy';
+    color: #fff;
+}
+
+.header__contacts  a {
+
+    font-family: 'Gilroy';
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.header__contacts a:hover {
+    color: #FFCC00;
+    cursor: pointer;
+  
+}
+
+.header__contacts  span {
+    font-size: 14px;
+    color: #fff;
+}
+
+.header__question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.question{
+    margin-left: 1rem;
+    font-family: 'Gilroy';
+    font-size: 14px;
+    color: #FFCC00;
+    cursor: pointer;
+}
+
+.question:hover {
+    text-decoration: underline;
+}
+
+.header__title{
+
+width: 613px;
+padding-left: 152px;
+margin-bottom: 30px;
+font-family: Gilroy;
+font-style: normal;
+font-weight: 800;
+font-size: 60px;
+line-height: 75px;
+
+color: #FFFFFF;
+}
+
+.header__title2{
+/* position: absolute;
+
+left: 20%;
+top: 50%; */
+
+width: 542px;
+padding-left: 152px;
+margin-bottom: 30px;
+font-family: Gilroy;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 130%;
+/* or 26px */
+
+
+color: #FFFFFF;
+}
+.header__button {
+   padding-left: 152px; 
+}
+.button {
+
+width: 270px;
+height: 56px;
+
+
+background: linear-gradient(99.01deg, #FF9200 4.22%, #FFCC00 108.35%);
+border-radius: 50px;
+
+font-family: Gilroy;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+
+color: #FFFFFF;
+z-index: 2;
+}
+
+.pic1{
+position: absolute;
+width: 929px;
+height: 753px;
+left: 50%;
+top: 5%;
+z-index: 2;
+}
+
+.pic2{
+position: absolute;
+left: 0;
+top: 7%;
+}
+
+.pic3{
+position: absolute;
+right: 0;
+top: 6%;
+}
+
+.service {
+    background-color: #fff;
+   
+}
+
+.service__text {
+
+width: 800px;
+padding-left: 180px;
+padding-top: 170px;
+font-family: Gilroy;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 32px;
+/* or 32px */
+
+
+color: #333333;
+}
+
+.service__title {
+
+padding-left: 180px;
+padding-top: 80px;
+margin-bottom: 30px;
+
+}
+
+.title__black{
+font-family: Gilroy;
+font-size: 46px;
+font-weight: bold;
+line-height: 140%;
+/* or 64px */
+color: #333333;
+
+display: flex;
+}
+
+.service__items{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.service__row {
+   display:flex;	
+   justify-content:space-between;
+   margin: 0 auto;
+  
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+
+.serivice__item {
+   
+    background: #F2F7FA;
+    border-radius: 6px;
+    width: 350px;
+    height: 470px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+.item__image{
+    position: relative;
+    top:-5%;
+    text-align: center;
+}
+
+.item__title {
+    padding: 0px 30px 0px 30px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 120%;
+    margin-bottom: 20px;
+    /* or 26px */
+
+
+    color: #333333;
+}
+.item__price {
+
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 120%;
+    /* or 26px */
+
+    padding: 0px 30px 0px 30px;
+    color: #FF9200;
+}
+.item__descroption {
+
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    /* or 21px */
+
+    padding: 20px 30px 0px 30px;
+    color: #333333;
+}
+
+.all__service {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+.all__service a{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+    text-align: center;
+    text-decoration-line: underline;
+    color:#20A0C9;
+}
+
+.about{
+    position: relative;
+    height: 725px;
+    background: linear-gradient(180deg, #00549A 0%, #20A0C9 81.85%);
+}
+.about__img{
+    position: absolute;
+    left:0px;
+    top: 30px;
+}
+
+.about__img2{
+    position: absolute;
+    right:0px;
+    top: 40px;
+    z-index: 4;
+}
+.about__title{
+
+    padding-left: 180px;
+    padding-top: 89px;
+    width: 1100px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 120%;
+
+    color: #FFFFFF;
+}
+
+.about__items{
+    display: flex;
+    width: 700px;
+    flex-direction: column;
+    padding-left: 180px;
+    padding-top: 50px;
+}
+.about__item{
+    
+    display: flex;
+    margin-bottom: 15px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+    /* or 25px */
+
+
+    color: #FFFFFF;
+
+}
+
+.about__check {
+}
+.about__text {
+    padding-left: 15px;
+
+}
+
+.about__pic {
+    position: absolute;
+    width: 1%;
+    right:55.7%;
+    top:32%;
+    z-index: 3;
+}
+
+.title {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 140%;
+    /* or 64px */
+    color: #333333;
+    
+    
+}
+
+.team__title {
+    padding-top: 50px;
+    padding-left: 180px;
+    z-index: 3;
+    
+}
+
+.team {
+    background-color: #fff;
+    position: relative;
+    height: 600px;
+}
+
+.team__img {
+    position: absolute;
+    top: 80px;
+    z-index: 1;
+}
+
+.team__memebers {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 180px 30px 180px;
+    
+    
+}
+.team__member {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:280px;
+    z-index: 3;
+}
+
+.team__name {
+    text-align: center;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    /* identical to box height, or 22px */
+
+
+    color: #333333;
+
+    margin: 10px 0px 10px 0px;
+}
+.team__position {
+    text-align: center;
+    font-family: Gilroy;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+    /* or 19px */
+
+    text-align: center;
+
+    color: #20A0C9;
+    margin: 0px 0px 10px 0px;
+    
+}
+
+.team__face {
+    text-align: center;
+}
+
+.team__pic {
+    position:absolute;
+    left: 10%;
+    z-index: 2;
+}
+
+.features {
+    background: #F2F7FA;
+     
+}
+
+.features__title {
+    padding-top: 220px;
+    padding-left: 180px;
+}
+
+.features__text {
+    padding: 30px 180px 0 180px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 180%;
+    /* or 32px */
+    color: #333333;
+}
+
+.features__items {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 180px 80px 180px;
+    
+}
+
+.features__item {
+   width: 202px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+.item__pic {
+text-align: center;
+
+
+}
+
+
+.item__name {
+    text-align: center;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    /* identical to box height, or 22px */
+
+
+    color: #333333;
+
+    margin: 10px 0px 10px 0px;
+
+}
+.item__desc {
+
+    text-align: center;
+    font-family: Gilroy;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+    /* or 19px */
+
+    text-align: center;
+
+    color: #333333;
+    margin: 0px 0px 10px 0px;
+}
+
+
+
+.rec {
+
+z-index: 2;
+}
+
+.feat {
+    position: absolute;
+    left: 69px;
+    top: 27px;
+    z-index: 3;
+
+}
+
+.footer {
+    background: linear-gradient(180deg, #00549A 0%, #20A0C9 81.85%);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0 180px 50px 180px;
+}
+
+.footer__img {
+    position: absolute;
+    right: 0;
+    top: 200px;
+    z-index: 0;
+}
+
+.footer__title {
+    padding:80px 120px 0 120px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 120%;
+    /* or 62px */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.orange {
+    color:#FFCC00;
+}
+
+.footer__text{
+    
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 120%;
+    /* or 24px */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.footer__nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.est{
+    padding-top: 1px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 120%;
+    /* or 24px */
+
+    text-align: center;
+    justify-content:stretch;
+
+    color: #FFFFFF;
+}
+
+.footer__agreement {
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+
+.footer__agreement a {
+    cursor: pointer;
+    text-decoration: underline;
+    
+    
+
+}
+
+.footer__agreement a:hover {
+    color:#FFCC00;
+}
+
+.footer__menu1 {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.footer__menu1 a {
+    cursor: pointer;
+}
+
+.footer__menu1 a:hover {
+    color:#FFCC00;
+}
+
+.footer__menu2 {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.footer__menu2 a {
+    cursor: pointer;
+}
+
+.footer__menu2 a:hover {
+    color:#FFCC00;
+}
+
+.footer__contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1;
+    
+}
+
+.tel {
+  padding-bottom: 6px;  
+}  
+
+
+.tel a {
+font-family: Gilroy;
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+cursor: pointer;
+
+color: #FFFFFF;
+}
+
+.tel a:hover {
+    color:#FFCC00;
+}
+
+.audit{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 120%;
+    /* or 24px */
+
+    text-align: left;
+
+    color: #FFFFFF;
+    padding-bottom: 8px;  
+}
+
+.w_a {
+    line-height: 35px;
+}
+
+.wa{
+    position: relative;
+}
+.phone {
+    position: absolute;
+    right:8px;
+    top: 9px;
+}
