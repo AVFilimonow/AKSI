@@ -135,9 +135,25 @@ margin-right: -2px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    position: relative;
+    height: 150px;
+    width: 200px;
+}
+
+.circles_1 {
+    position: absolute;
+    top: 5px;
+    left: -15px;
+}
+.circles_2 {
+    position: absolute;
+    top: 10px;
+    left: -10px;
 }
 .question{
+    position: absolute;
+    top: 15px;
+    left: 10px;
     margin-left: 1rem;
     font-family: 'Gilroy';
     font-size: 14px;
@@ -196,12 +212,17 @@ border-radius: 50px;
 
 font-family: Gilroy;
 font-style: normal;
-font-weight: 600;
+font-weight: 400;
 font-size: 20px;
 line-height: 24px;
-
+text-align: center;
 color: #FFFFFF;
 z-index: 2;
+}
+
+.button:hover {
+
+color: dimgray;
 }
 
 .pic1{
@@ -234,7 +255,7 @@ top: 6%;
 
 width: 800px;
 padding-left: 180px;
-padding-top: 170px;
+padding-top: 80px;
 font-family: Gilroy;
 font-style: normal;
 font-weight: normal;
@@ -353,6 +374,10 @@ display: flex;
     text-align: center;
     text-decoration-line: underline;
     color:#20A0C9;
+}
+
+.all__service a:hover{
+    color:#FFCC00;
 }
 
 .about{
@@ -649,6 +674,7 @@ z-index: 2;
 .footer__nav {
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
 }
 
 .est{
@@ -767,4 +793,72 @@ color: #FFFFFF;
     position: absolute;
     right:8px;
     top: 9px;
+}
+
+.footer__form {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    height: 200px;
+    margin: 20px 0;
+}
+
+.name {
+      
+    width: 270px;
+    height: 60px;
+
+    background: #fff;
+    border-radius: 50px;
+
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 25px;
+   
+    color: #FFFFFF;
+    padding: 12px 20px;
+    
+    
+    
+}
+
+.name__input{
+    width: 100%;
+    height: 35px;
+}
+.phone_number {
+
+    width: 270px;
+    height: 60px;
+
+    background: #fff;
+    border-radius: 50px;
+
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 25px;
+
+    color: #FFFFFF;
+    padding: 12px 20px;
+}
+
+.phone__input{
+
+    width: 100%;
+    height: 35px;
+
+}
+.form__button {
+    width: 270px;
+    height: 56px;
+
+    background: linear-gradient(99.01deg, #FF9200 4.22%, #FFCC00 108.35%);
+    box-shadow: 0px 4px 5px #FF9200, 0px 10px 15px #1678AC;
+    border-radius: 50px;
+
 }
